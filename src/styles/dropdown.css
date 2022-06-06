@@ -1,0 +1,41 @@
+.dropdown > div {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  padding-left: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #f1b312;
+  text-transform: uppercase;
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.7s;
+}
+
+.dropdown > p {
+  background: #998508;
+  margin: 5px 10px;
+  padding: 5px;
+  color: #fff;
+}
+
+.dropdown-link {
+  width: 100%;
+  position: absolute;
+  right: 100%;
+  opacity: 0;
+  transition: 0.7s;
+}
+
+.show-link {
+  right: 0;
+  left: 0;
+  opacity: 1;
+  margin-left: 60px;
+}
+
+.arrow {
+  font-size: 30px;
+}

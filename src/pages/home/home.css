@@ -1,0 +1,95 @@
+.image-container {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+.image-container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text {
+  position: absolute;
+  bottom: 0;
+  margin: 10px;
+  color: #fff;
+}
+
+.text > button {
+  padding: 5px 10px;
+  border: none;
+  background: #ebbd42;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.blurred {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0, 0.3);
+}
+
+.selection {
+  display: flex;
+  gap: 5px;
+  padding: 5px 0;
+}
+
+.selection > h3 {
+  flex: 1;
+  text-align: center;
+  background: #ebbd42;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.selection > h3:hover {
+  background: #4e693f;
+}
+
+.information {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, auto));
+  gap: 5px;
+}
+
+.info {
+  background: #f8f4e4;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  gap: 10px;
+}
+
+.info:hover {
+  background: #ebbd42;
+}
+
+.info > img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  background: #ebbd42;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.application-map {
+  width: 100%;
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .home {
+    padding: 5px;
+  }
+}

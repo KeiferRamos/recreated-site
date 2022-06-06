@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import Sidebar from "./components/sidebar";
+import Routescomponent from "./routes";
+import useGlobalContext from "./context/globalcontext";
+import Navbar from "./components/navbar";
+import "./styles/app.css";
+import Footer from "./components/footer";
 
 function App() {
+  const { screenWidth } = useGlobalContext();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {screenWidth <= 600 && <Navbar />}
+      <Sidebar />
+      <Routescomponent />
+      <Footer />
     </div>
   );
 }
