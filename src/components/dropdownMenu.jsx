@@ -1,6 +1,8 @@
 import React from "react";
 import "../styles/dropdown.css";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
+import { useNavigate } from "react-router-dom";
+import useGlobalContext from "../context/globalcontext";
 
 function DropDownMenu({
   header,
@@ -8,14 +10,21 @@ function DropDownMenu({
   logo,
   selectedDropDown,
   setselectedDropDown,
-  isOpen,
 }) {
+  const { setisOpen, isOpen } = useGlobalContext();
+  const navigate = useNavigate();
   const openDropDownMenu = () => {
     if (selectedDropDown == header) {
       setselectedDropDown(null);
     } else {
       setselectedDropDown(header);
     }
+  };
+
+  const navigateUser = (path) => {
+    window.scrollTo(0, 0);
+    navigate(path);
+    setisOpen(false);
   };
 
   return (
@@ -30,7 +39,11 @@ function DropDownMenu({
         </div>
       </div>
       {selectedDropDown == header &&
-        selection.map(({ name, path }, i) => <p key={i}>{name}</p>)}
+        selection.map(({ name, path }, i) => (
+          <p key={i} onClick={() => navigateUser(path)}>
+            {name}
+          </p>
+        ))}
     </div>
   );
 }

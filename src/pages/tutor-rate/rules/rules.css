@@ -1,0 +1,64 @@
+.rules-selection {
+  display: flex;
+  gap: 5px;
+}
+
+.some-text {
+  position: relative;
+  height: 400px;
+  margin-bottom: 5px;
+}
+
+.some-text > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.some-text > p {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: #fff;
+  font-size: 20px;
+  padding: 5px;
+  width: 60%;
+}
+
+.rules-selection > h4 {
+  cursor: pointer;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #406771;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+}
+
+.selected {
+  background-color: #3f7043;
+}
+
+.rate-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rate-info > p {
+  flex: 1;
+  padding: 5px;
+}
+
+@media (max-width: 600px) {
+  .rules {
+    padding-top: 80px;
+  }
+  .some-text > p {
+    width: 100%;
+  }
+
+  .rate-info > .note {
+    flex: 5;
+  }
+}

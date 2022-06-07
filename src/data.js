@@ -1,6 +1,7 @@
 import { FaHome, FaBriefcase, FaDonate, FaQuestion } from "react-icons/fa";
-
-export const links = [{ name: "HOME", logo: <FaHome />, path: "/" }];
+import IncomeInfo from "./components/income-info";
+import RateInfo from "./components/rate-info";
+import SimulatorInfo from "./components/simulator-info";
 
 export const qualificationAndRequirements = [
   {
@@ -91,13 +92,15 @@ export const contacts = [
   },
 ];
 
+export const links = [{ name: "HOME", logo: <FaHome />, path: "/" }];
+
 export const dropdownInfo = [
   {
     header: "Tutor Rate",
     logo: <FaDonate />,
     selection: [
-      { name: "Rules", path: "" },
-      { name: "Simulator", path: "" },
+      { name: "Rules", path: "/tutor-rate/rules" },
+      { name: "Simulator", path: "/tutor-rate/simulator" },
     ],
   },
   {
@@ -119,5 +122,50 @@ export const dropdownInfo = [
       { name: "Dictionary", path: "" },
       { name: "Why Weblio?", path: "" },
     ],
+  },
+];
+
+export const rulesContent = [
+  { header: "Rate per lesson", content: <RateInfo /> },
+  { header: "How much do I earn a month?", content: <IncomeInfo /> },
+  { header: "Simulator", content: <SimulatorInfo /> },
+];
+
+export const ratePerLessonInfo = [
+  {
+    rank: "A",
+    perLesson: 100,
+    perHour: 200,
+    note: "You are the epitome of a professional Weblio tutor!",
+  },
+  {
+    rank: "B",
+    perLesson: 75,
+    perHour: 150,
+    note: "Conduct more lessons while meeting all criteria such as 0 troubles to move up!",
+  },
+  {
+    rank: "C",
+    perLesson: 70,
+    perHour: 140,
+    note: "Conduct more lessons while meeting all criteria such as 0 troubles to move up!",
+  },
+  {
+    rank: "D",
+    perLesson: 65,
+    perHour: 130,
+    note: "Conduct more lessons while meeting all criteria such as 0 troubles to move up!",
+  },
+  {
+    rank: "E",
+    perLesson: 60,
+    perHour: 120,
+    note: "Conduct more lessons while meeting all criteria such as 0 troubles to move up!",
+  },
+  {
+    rank: "F",
+    perLesson: 50,
+    perHour: 100,
+    note: "All tutors start from here",
   },
 ];
