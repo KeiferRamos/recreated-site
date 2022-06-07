@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/weblio/static/css/main.e6c5ffa3.css",
-    "main.js": "/weblio/static/js/main.e7083389.js",
-    "index.html": "/weblio/index.html",
-    "main.e6c5ffa3.css.map": "/weblio/static/css/main.e6c5ffa3.css.map",
-    "main.e7083389.js.map": "/weblio/static/js/main.e7083389.js.map"
+    "main.css": "/recreated-site/static/css/main.139f905c.css",
+    "main.js": "/recreated-site/static/js/main.af823e50.js",
+    "index.html": "/recreated-site/index.html",
+    "main.139f905c.css.map": "/recreated-site/static/css/main.139f905c.css.map",
+    "main.af823e50.js.map": "/recreated-site/static/js/main.af823e50.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c5ffa3.css",
-    "static/js/main.e7083389.js"
+    "static/css/main.139f905c.css",
+    "static/js/main.af823e50.js"
   ]
 }
