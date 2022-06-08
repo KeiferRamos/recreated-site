@@ -43,15 +43,74 @@
 .rate-info {
   display: flex;
   flex-wrap: wrap;
+  gap: 5px;
 }
 
-.rate-info > p {
+.rate-info > p,
+.rate-info > h4 {
   flex: 1;
+  padding: 20px 10px;
+  margin-bottom: 5px;
+  border: 1px solid #bebebe;
+  font-weight: bold;
+}
+
+.rate-info > p:nth-child(odd),
+.rate-info > h4:nth-child(odd) {
+  background: #ebd6ab;
+}
+
+.more-info {
+  width: 100%;
+}
+
+.more-info > li {
+  padding: 10px 5px;
+  margin-bottom: 5px;
+  color: #516e86;
+  border: 1px solid #3f7043;
+  font-weight: bold;
+  list-style: none;
+}
+
+.income-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  padding: 0 5px;
+}
+
+.income-info > img {
+  width: 100%;
+}
+
+.simulator-info {
   padding: 5px;
+}
+
+.simulator-table-header {
+  padding: 10px;
+  background: #f1b312;
+  margin-bottom: 10px;
+  gap: 5px;
+  color: #516e86;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.simulator-table-header > div {
+  font-size: 30px;
+}
+
+.rate-guide {
+  margin-top: 25px;
 }
 
 @media (max-width: 600px) {
   .rules {
+    padding: 5px;
     padding-top: 80px;
   }
   .some-text > p {
@@ -60,5 +119,8 @@
 
   .rate-info > .note {
     flex: 5;
+  }
+  .note {
+    display: none;
   }
 }

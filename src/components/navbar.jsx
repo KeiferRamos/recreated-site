@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "../styles/navbar.css";
 import { FaBars } from "react-icons/fa";
 import useGlobalContext from "../context/globalcontext";
 
 function Navbar() {
-  const { isOpen, setisOpen } = useGlobalContext();
+  const { setisOpen } = useGlobalContext();
 
   return (
     <div className="navbar">

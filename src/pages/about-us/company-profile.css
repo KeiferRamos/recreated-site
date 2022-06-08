@@ -1,0 +1,40 @@
+.company-profile {
+  padding: 10px;
+}
+
+.history > div {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  margin: 10px 0;
+  color: #3e6b76;
+  border-top: 2px solid #bebebe;
+}
+
+.history div > img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.overview > div {
+  padding: 10px;
+  border: 1px solid #bebebe;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+@media (max-width: 600px) {
+  .company-profile {
+    margin-top: 80px;
+    padding: 5px;
+  }
+  .history > div {
+    gap: 10px;
+    padding: 10px;
+    margin: 5px 0;
+  }
+  .overview > div {
+    font-size: 16px;
+  }
+}

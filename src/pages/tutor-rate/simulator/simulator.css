@@ -1,0 +1,53 @@
+.simulator {
+  width: 100%;
+}
+
+.simulator-calculator {
+  padding: 5px;
+  background-color: #fdfbf4;
+}
+
+.simulator-calculator h4 > span {
+  color: red;
+}
+
+.calculator {
+  margin-top: 25px;
+}
+
+.input-field {
+  margin: 10px 0;
+  padding: 10px 5px;
+  background: #edd477;
+  color: #2e4c58;
+}
+
+.input-field > label {
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 0;
+}
+
+.input-field > input,
+.input-field > select {
+  width: 100%;
+  height: 50px;
+  padding: 0 5px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: #f8f4e6;
+}
+
+.fee-info > h3 {
+  padding: 10px 5px;
+  background: #f5ebc5;
+  color: #2e4c58;
+  margin: 5px 0;
+}
+
+@media (max-width: 600px) {
+  .simulator {
+    margin-top: 80px;
+  }
+}

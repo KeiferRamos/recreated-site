@@ -9,11 +9,15 @@ import { useEffect } from "react";
 
 function App() {
   const navigate = useNavigate();
-  const { screenWidth } = useGlobalContext();
+  const { screenWidth, setisOpen } = useGlobalContext();
 
   useEffect(() => {
     navigate("/");
   }, []);
+
+  useEffect(() => {
+    setisOpen(false);
+  }, [window.location.pathname]);
 
   return (
     <div className="App">

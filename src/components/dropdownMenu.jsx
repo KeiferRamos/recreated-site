@@ -13,7 +13,9 @@ function DropDownMenu({
 }) {
   const { setisOpen, isOpen } = useGlobalContext();
   const navigate = useNavigate();
+
   const openDropDownMenu = () => {
+    setisOpen(true);
     if (selectedDropDown == header) {
       setselectedDropDown(null);
     } else {

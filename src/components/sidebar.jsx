@@ -18,6 +18,9 @@ function Sidebar() {
 
   return (
     <div className={`${isOpen ? "show" : ""} sidebar`}>
+      {isOpen && (
+        <div className="close-tab" onClick={() => setisOpen(false)}></div>
+      )}
       <div className="header">
         <button
           className="sidebar-btn"

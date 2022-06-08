@@ -104,24 +104,9 @@ export const dropdownInfo = [
     ],
   },
   {
-    header: "Career in Weblio PH",
-    logo: <FaBriefcase />,
-    selection: [
-      { name: "Home Based Tutor", path: "" },
-      { name: "Operation Staff", path: "" },
-      { name: "Human Resources Staff", path: "" },
-      { name: "Material Creation Staff", path: "" },
-      { name: "Web Developer", path: "" },
-    ],
-  },
-  {
     header: "About Us",
     logo: <FaQuestion />,
-    selection: [
-      { name: "Company Profile", path: "" },
-      { name: "Dictionary", path: "" },
-      { name: "Why Weblio?", path: "" },
-    ],
+    selection: [{ name: "Company Profile", path: "/about-us/company-profile" }],
   },
 ];
 
@@ -167,5 +152,190 @@ export const ratePerLessonInfo = [
     perLesson: 50,
     perHour: 100,
     note: "All tutors start from here",
+  },
+];
+
+export const simulatorInfo = [
+  {
+    header: "Example 1: 20 lessons per day, 22 days per month",
+    days: 22,
+    lesson: 20,
+    total: 440,
+    data: [
+      {
+        name: "Tutor 1",
+        rank: "A(100)",
+        gross: "44,000",
+      },
+      {
+        name: "Tutor 2",
+        rank: "B(75)",
+        gross: "33,000",
+      },
+      {
+        name: "Tutor 3",
+        rank: "C(70)",
+        gross: "30,800",
+      },
+      {
+        name: "Tutor 4",
+        rank: "D(65)",
+        gross: "28,600",
+      },
+      {
+        name: "Tutor 5",
+        rank: "E(60)",
+        gross: "26,400",
+      },
+      {
+        name: "Tutor 6",
+        rank: "F(50)",
+        gross: "22,000",
+      },
+    ],
+  },
+  {
+    header: "Example 2: 10 lessons per day, 15 days per month",
+    days: 15,
+    lesson: 10,
+    total: 150,
+    data: [
+      {
+        name: "Tutor 1",
+        rank: "A(100)",
+        gross: "15,000",
+      },
+      {
+        name: "Tutor 2",
+        rank: "B(75)",
+        gross: "11,250",
+      },
+      {
+        name: "Tutor 3",
+        rank: "C(70)",
+        gross: "10,500",
+      },
+      {
+        name: "Tutor 4",
+        rank: "D(65)",
+        gross: "9,750",
+      },
+      {
+        name: "Tutor 5",
+        rank: "E(60)",
+        gross: "9,000",
+      },
+      {
+        name: "Tutor 6",
+        rank: "F(50)",
+        gross: "7,500",
+      },
+    ],
+  },
+  {
+    header: "Example 3: 8 lessons per day, 10 days per month",
+    days: 10,
+    lesson: 8,
+    total: 80,
+    data: [
+      {
+        name: "Tutor 1",
+        rank: "A(100)",
+        gross: "8,000",
+      },
+      {
+        name: "Tutor 2",
+        rank: "B(75)",
+        gross: "6,000",
+      },
+      {
+        name: "Tutor 3",
+        rank: "C(70)",
+        gross: "5,600",
+      },
+      {
+        name: "Tutor 4",
+        rank: "D(65)",
+        gross: "5,200",
+      },
+      {
+        name: "Tutor 5",
+        rank: "E(60)",
+        gross: "4,800",
+      },
+      {
+        name: "Tutor 6",
+        rank: "F(50)",
+        gross: "4,000",
+      },
+    ],
+  },
+];
+
+export const hourlyRate = [200, 150, 140, 130, 120, 100];
+
+export const companyHistory = [
+  {
+    img: "https://weblioph.com/wp-content/uploads/2016/04/ESTABLISHMENT.png",
+    date: 2005,
+    details:
+      "Establishment in Tokyo Japan. We started with “IT vocabulary binary dictionary.” Very first step for our English learning system.",
+  },
+  {
+    img: "https://weblioph.com/wp-content/uploads/2016/04/DICTIONARY.png",
+    date: 2008,
+    details:
+      "Started online English-Japanese dictionary services. From the beginning, we were focusing on SEO aspect of dictionary business, so users can obtain information they need more easier and faster, which, comes for FREE.",
+  },
+  {
+    img: "https://weblioph.com/wp-content/uploads/2016/04/VOCAB.png",
+    date: 2011,
+    details:
+      "Started offering “English vocabulary notebook” for individual users, which is associated with the online English dictionary. Due to this, we have stable amount of repeating users, who also visit tutorial services.",
+  },
+  {
+    img: "https://weblioph.com/wp-content/uploads/2016/04/SP.png",
+    date: 2011,
+    details:
+      "Opened websites for Smartphones, which allow all user to enjoy almost full feature we have on smartphones. This means they are connected to our service even more. They use our services in daily basis.",
+  },
+  {
+    img: "https://weblioph.com/wp-content/uploads/2016/04/APP.png",
+    date: 2013,
+    details:
+      "Launched “English translation APP.” Now that we have concentrated more on Smartphone users, we made an app to allow them to translate English into Japanese whenever they need, for FREE. The more they use our services, the higher possibility for you to have students.",
+  },
+  {
+    img: "https://weblioph.com/wp-content/uploads/2016/04/EIKAIWA.png",
+    date: 2014,
+    details:
+      "Opened online English tutorial services. As you can see above, we have stable amount of users due to our other services like the dictionary and translation app, and that makes our company different from others; we offer total learning experience.",
+  },
+  {
+    img: "https://weblioph.com/wp-content/uploads/2016/04/ROBOT.png",
+    date: 2015,
+    details:
+      "Launched “AI English tutorial.” With this, students can talk to AI in English. Don’t worry, it’s still not capable of replacing your place. But in accordance to our policy, we don’t hesitate to try something new.",
+  },
+  {
+    img: "https://weblioph.com/wp-content/uploads/2016/06/chat-20.png",
+    date: 2017,
+    details: "Launched WebRTC – Weblio’s own learning platform.",
+  },
+];
+
+export const companyInfo = [
+  {
+    title: "Company Overview",
+    details: `Weblio Philippines, Inc., is an affiliate company of GRAS Group, Inc. (formerly Weblio, Inc.), with a head office in Tokyo, Japan.
+GRAS Group, Inc., is the leading provider of school/corporate lessons to junior high school and high schools in Japan. In August 2014, Weblio Philippines, Inc., opened its doors to an online English tutorial services as part of the company’s mission to expand mankind’s possibilities. To date, the company has been providing home-based tutors an avenue to expand their possibilities by providing fun and satisfying lessons to our customers.`,
+  },
+  {
+    title: "Mission",
+    details: `Expand mankind’s possibilities through the Internet.`,
+  },
+  {
+    title: "Vision",
+    details: `Become a great corporation that maximizes the potential of individuals and organizations and contributes to learning and growth.`,
   },
 ];
